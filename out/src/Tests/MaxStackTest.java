@@ -34,4 +34,16 @@ public class MaxStackTest {
         stack.push(2);
         assertEquals(1, stack.min());
     }
+    @org.junit.jupiter.api.Test
+    public void testPushPopMinMax() {
+        MaxStack stack = new MaxStack();
+        stack.push(3);
+        stack.push(10);
+        stack.push(2);
+        assertEquals(10, stack.max());
+        assertEquals(2, stack.min());
+        stack.pop();
+        assertEquals(10, stack.max());
+        assertEquals(3, stack.min());
+    }
 }
