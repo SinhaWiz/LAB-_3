@@ -22,9 +22,11 @@ public class MaxStack {
         return value;
     }
     public int max() {
+
         return maxStack.peek();
     }
     public int min() {
+
         return mainStack.stream().min(Integer::compare).orElseThrow();
     }
 }
