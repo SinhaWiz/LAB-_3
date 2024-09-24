@@ -14,13 +14,13 @@ public class MaxStack {
             maxStack.push(value);
         }
     }
-//    public int pop() {
-//        int value = mainStack.pop();
-//        if (value == maxStack.peek()) {
-//            maxStack.pop();
-//        }
-//        return value;
-//    }
+    public int pop() {
+        int value = mainStack.pop();
+        if (value == maxStack.peek()) {
+            maxStack.pop();
+        }
+        return value;
+    }
     public int max() {
         return maxStack.peek();
     }
